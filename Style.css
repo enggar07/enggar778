@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Styling Form Input */
+.input-form {
+    background: #eef;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.input-form input, 
+.input-form button {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box; /* Agar padding tidak menambah lebar */
+}
+
+.input-form button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.input-form button:hover {
+    background-color: #4cae4c;
+}
+
+/* Styling Tabel */
+.daftar-belanja table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.daftar-belanja th, 
+.daftar-belanja td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.daftar-belanja th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.daftar-belanja tr:hover {
+    background-color: #f9f9f9;
+}
+
+.daftar-belanja tfoot td {
+    background-color: #e0f7fa;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.delete-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c9302c;
+}
+
+/* Responsif untuk tampilan layar kecil */
+@media (min-width: 600px) {
+    .input-form input {
+        width: calc(33.33% - 12px); /* 3 input per baris */
+        display: inline-block;
+    }
+    .input-form button {
+        width: 100%; 
+    }
+}
