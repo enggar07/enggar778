@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Belanja Interaktif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Kalkulator Belanja</h1>
+
+        <div class="input-form">
+            <h2>Tambah Barang</h2>
+            <input type="text" id="nama-barang" placeholder="Nama Barang">
+            <input type="number" id="harga-barang" placeholder="Harga Satuan (Rp)" min="0">
+            <input type="number" id="jumlah-barang" placeholder="Jumlah" min="1">
+            <button onclick="tambahBarang()">Tambah ke Daftar</button>
+        </div>
+
+        <div class="daftar-belanja">
+            <h2>Daftar Belanja Anda</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Barang</th>
+                        <th>Harga Satuan</th>
+                        <th>Jumlah</th>
+                        <th>Subtotal</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody id="rincian-belanja">
+                    </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3"><strong>Total Keseluruhan</strong></td>
+                        <td id="total-keseluruhan">Rp 0.00</td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
